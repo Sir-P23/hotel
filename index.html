@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa fa-bed"></i>  Logo    
+        </div>
+        
+        
+        <div id="drop">
+            <a href="" onclick="cancelF()" id="cancel">X</a>
+            <a href="#room">Rooms</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#more" id="book">Book Now</a> 
+        </div>
+
+        <div class="book-now">
+            <a href="#more" >Book Now</a>
+        </div>
+        
+        <div onclick="displayF()" id="display"><i class="fa fa-bars"></i></div>
+    </header>
+
+    <script>
+        function displayF(){
+            document.getElementById("drop"). style . display = " block"
+        }
+
+        function cancelF(){
+            document.getElementById("drop"). style . display = " none"
+        }
+    </script>
+
+    <!-- cont1 -->
+    <section class="cont1">
+        <div class="div">
+            <div class="div0">
+                <i class="fa fa-bed">  </i>Diamond Hotel
+            </div>  
+    
+            <form action="" id="search">
+                <div class="div1">
+                    <label for="date"> <i class="fa fa-calendar"> check in</i></label><br>
+                    <input type="date" placeholder="DD MM YYYY">
+                </div>
+
+                <div class="div2">
+                    <label for="date"> <i class="fa fa-calendar"> check out</i></label><br>
+                    <input type="date" placeholder="DD MM YYYY">
+                </div>
+
+                <div class="div3">
+                    <label for=""> <i class="fa fa-child"></i>Adults</label><br>
+                    <select name="" id="" >
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+                </div>
+
+                <div class="div4">
+                    <label for=""> <i class="fa fa-child"></i>kids</label><br>
+                    <select name="" id="" >
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+                </div>
+
+                <div class="div5">
+                    <a href="#search">
+                        <i class="fa fa-search"> search availabity</i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+   <!-- cont2 -->
+    <section class="cont2">
+        <h1>Rooms</h1>
+        <p class="room-text">Make yourself at home is our slogan. We offer the best in the industry.Sleep well and rest well.</p>
+
+        <form action="" class="form">
+            <div class="div6">
+                <label for="date">check In <i class="fa fa-calendar"></i></label><br>
+                <input type="date" placeholder="DD MM YYYY">
+            </div>
+
+            <div class="div7">
+                <label for="date">check out <i class="fa fa-calendar"></i></label><br>
+                <input type="date" placeholder="DD MM YYYY">
+            </div>
+
+            <div class="div8">
+                <label for=""> <i class="fa fa-adult"></i>Adults</label><br>
+                <select name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                </select>
+            </div>
+
+            <div class="div9">
+                <label for=""> <i class="fa fa-kids"></i>Kids</label><br>
+                <select name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                </select>
+            </div>
+
+            <div class="search">
+                <a href=""><i class="fa fa-search"> Search availability</i></a>
+            </div>
+        </form>
+        
+        <div class="available">
+            <section class="available-rooms">
+                <img src="images/room_single.jpg" alt="">
+
+                <h3>Single Room </h3>
+                <p>From $99 </p>
+                <p>single bed </p>
+                <p>15m </p>
+                <i class="fa fa-bathtub"></i> 
+                <i class="fa fa-phone"></i>
+                <i class="fa fa-wifi"></i>
+
+                <div>
+                    <a href="">Choose Room</a>
+                </div>
+            </section>
+
+            <section class="available-rooms">
+                <img src="images/room_double.jpg" alt="">
+
+                <h3>Double Room</h3>
+                <p>From $149 </p>
+                <p>queen-size bed </p>
+                <p>15m </p>
+                <i class="fa fa-bathtub"></i> 
+                <i class="fa fa-phone"></i>
+                <i class="fa fa-wifi"></i> 
+                <i class="fa fa-tv"></i>
+
+                <div>
+                    <a href="">Choose Room</a>
+                </div>
+            </section>
+
+            <section class="available-rooms">
+                <img src="images/room_deluxe.jpg" alt="">
+
+                
+                <h3>Deluxe Room</h3>
+                <p>From $199 </p>
+                <p>king-sized bed </p>
+                <p>15m </p>
+                <i class="fa fa-bathtub"></i> 
+                <i class="fa fa-phone"></i>
+                <i class="fa fa-wifi"></i> 
+                <i class="fa fa-tv"></i> 
+                <i class="fa fa-glass cup"></i> 
+                <i class="fa fa-spoon"></i>
+                
+
+                <div>
+                    <a href="">Choose Room</a>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="cont3">
+        <h3>About</h3>
+        <section class="about-div">
+           <p class="about-text">Our hotel is one of a kind. It is truely amazing. 
+                Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad 
+                minim veniam, quis nostrud exercitation ullamco 
+                laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate 
+                velit esse cillum dolore eu fugiat nulla 
+                Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est
+                laborum consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore et dolore 
+                magna aliqua. Ut enim ad minim veniambr <br><br>
+            
+               We accept  <i class="fa fa-money"></i>
+               <i class="fa fa-bitcoin"></i>
+               <i class="fa fa-mastercard"></i>
+               <i class="fa fa-paypal"></i>
+            </p> 
+            <div class="map"><img src="images/map.jpg" alt="" ></div>
+        </section>
+        
+        <div class="info">
+            <p>
+               <i class="fa fa-map"> </i>
+               423 Some adr, Abia, NIG.
+            </p>
+        
+            <p>
+                <i class="fa fa-phone"></i> 
+                Phone; +001236647
+            </p>
+
+            <p>
+                <i class="fa fa-envelope"></i> 
+                Email; mail.com
+            </p>  
+        </div>
+        <div class="on-div">
+            <div>
+                <span class="span1">i</span>
+                <span>
+                    On demand, we can offer playstation, babycall, children care, dog equipment, etc.
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cont4">
+        <h3>Our Hotel</h3>
+        <p>You can find our hotels in the world</p>
+        
+        <div class="images-div">
+            <div class="cinq">
+                <img src="images/cinqueterre.jpg" alt="">
+            </div>
+            <div class="image-div">
+                <img src="images/newyork2.jpg" alt="" class="ny">
+                <img src="images/sanfran.jpg" alt="" class="san">
+                <img src="images/pisa.jpg" alt="" class="pisa">
+                <img src="images/paris.jpg" alt="" class="paris">
+            </div>
+        </div>
+
+        <div class="form-div">
+            <h3>Get the best offers first!</h3>
+            
+            <p>Join our newsletter</p>
+        
+            <form action="" class="email">
+                <label for="email" >E-mail</label>
+                <input type="email" placeholder="your email addres"  id="subscribe"><br>
+
+                <button><a href="#subscribe" class="subscribe"> Subscribe</a></button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="cont5">
+        <h3>Contact</h3>
+        <p>If you have any questions, do not hesitate to ask them.</p>
+        <div class="info2">
+            <p>
+               <i class="fa fa-map"> </i>
+               423 Some adr, Abia, NIG.
+            </p>
+        
+            <p>
+                <i class="fa fa-phone"></i> 
+                Phone; +001236647
+            </p>
+
+            <p>
+                <i class="fa fa-envelope"></i> 
+                Email; mail.com
+            </p>  
+        </div>
+
+        <form action="post" class="form2">
+            <input type="name" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="message" placeholder="Message">
+            <button class="send">
+                <a href="">SEND MESSAGE</a>
+            </button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Find us on</p>
+        <div>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-snapchat"></i></a>
+            <a href=""><i class="fa fa-pinterest"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Powered by Sir-P TECH</p>
+    </footer>
+</body>
+</html>
